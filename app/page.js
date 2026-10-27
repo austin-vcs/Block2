@@ -42,15 +42,15 @@ export default function Home() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Ask a question..."
-          style={{ flex: 1, padding: '0.5rem', fontSize: '1rem' }}
+          style={{ flex: 1, padding: '0.5rem', fontSize: '1rem', background: '#ffffff', color: '#171717' }}
         />
-        <button type="submit" disabled={loading} style={{ padding: '0.5rem 1rem', fontSize: '1rem' }}>
+        <button type="submit" disabled={loading} style={{ padding: '0.5rem 1rem', fontSize: '1rem', background: '#171717', color: '#ffffff' }}>
           {loading ? 'Thinking...' : 'Ask'}
         </button>
       </form>
 
       {response && (
-        <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#f5f5f5', borderRadius: '8px' }}>
+        <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#f5f5f5', color: '#171717', borderRadius: '8px' }}>
           {response}
         </div>
       )}
