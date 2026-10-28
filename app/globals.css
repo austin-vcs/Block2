@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Spinner used on the Document Q&A page while the API is loading. */
+@keyframes cc-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
